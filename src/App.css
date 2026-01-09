@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: center; 
+  z-index: 1; 
 }
 
 .App-logo {
@@ -35,4 +36,85 @@
   to {
     transform: rotate(360deg);
   }
+} 
+
+.navbar { 
+
+  font-size: 13px;  
+  justify-content: space-around; 
+  overflow-x: visible;
+  display: flex; 
+  
+
+
+
+}  
+
+.navbar p:active { 
+  outline-style: dotted;
+  outline-offset: 12px;
+} 
+
+.navbar p:hover { 
+
+  text-decoration: underline; 
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 4px; 
 }
+
+.spotlight-container {
+ 
+  background-color: blue; 
+  
+  min-height: 100vh; 
+  width: 100%;
+  position: relative;
+  
+  
+  background-image: radial-gradient(
+    
+    circle 200px at var(--mouse-x) var(--mouse-y),
+    
+    
+    rgba(255, 255, 255, 0.6) 0%, 
+    
+   
+    #fff 100% 
+    ); 
+
+
+}
+
+
+.spotlight-container > * {
+  
+  position: relative; 
+  z-index: 2; 
+}   
+
+.image { 
+
+  position: relative; 
+
+} 
+
+.text-overlay { 
+
+  position: absolute; 
+  top: 22%;  
+  left: 15%;  
+  display: flex; 
+  letter-spacing: 200px; 
+  font-size: 90px; 
+  font-weight: bold; 
+  color: orangered;  
+
+}
+
+.greyfooter { 
+
+  background-color: #d4cecd; 
+  justify-content: space-around; 
+  display: flex;
+}
+
